@@ -2,3 +2,64 @@
  # dot dot slash use to access linux directories.
  
  http://192.168.100.170/mutillidae/index.php?page=../../../etc/passwd
+
+
+    Remote File Inclusion (RFI) or Local File inclusionm (LFI)
+
+  
+
+# RFI
+  
+  # no validation
+
+
+    ?php
+
+Include ($_GET[‘page’]);
+
+?>
+
+    
+
+  # Validation
+
+  ?php
+
+var = $_GET[‘page’];
+$pages = array(‘index.php’, ‘page1.php’, ‘page2.php’);
+If(in_array ($var, $pages))
+{
+Include($page);
+} else {
+die (“Página não aceita, provável tentativa de ataque.”);
+}
+
+?>
+
+# LFI  validation
+
+
+            if (($uploaded_ext == "jpg" || $uploaded_ext == "JPG" || $uploaded_ext == "jpeg" || $uploaded_ext == "JPEG") && ($uploaded_size < 100000)){
+
+                if(!move_uploaded_file($_FILES['uploaded']['tmp_name'], $target_path)) {
+
+                    echo '<pre>';
+                    echo 'Your image was not uploaded.';
+                    echo '</pre>';
+
+                  } else {
+
+                    echo '<pre>';
+                    echo $target_path . ' succesfully uploaded!';
+                    echo '</pre>';
+
+                    }
+            }
+
+            else {
+
+                echo '<pre>';
+                echo 'Your image was not uploaded.';
+                echo '</pre>';
+
+            } 
