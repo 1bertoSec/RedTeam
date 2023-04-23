@@ -1,2 +1,2 @@
 # RedTeam
-Repositório para armazenamento de comandos conhecidos nas aulas de Segurança Ofensiva.
+Repositório para armazenamento de comandos, informações e dicas conhecidas nas aulas de Segurança Ofensiva.
