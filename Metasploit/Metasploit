@@ -1,0 +1,9 @@
+#Metasploit Framework --> kali 
+    metasploit.com
+
+# metasploit # use auxiliary  //help with metasploit cmds
+    # use auxiliary/scanner/http/joomla_version  //Open joomla scan version
+    # show options //view required fields
+        set RHOSTS 192.168.100.157  //Target IP
+        set TARGETURI /joomla       //Target Directory
+        run                         //Run metasploit to get joomla version in this case

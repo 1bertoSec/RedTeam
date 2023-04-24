@@ -1,0 +1,5 @@
+# use auxiliary/scanner/http/brute_dirs
+    show options --> show required fields
+        set RHOSTS 192.168.100.157 //set target ip
+        set PATH /bWAPP            // set path directory
+        run                        // run metasploit
