@@ -1,0 +1,6 @@
+# load wmap //load plugin wmap to scan target about multiples auxiliaries
+
+    #wmap_sites -a http://192.168.0.59  //set ip target
+    #wmap_targets -t http://192.168.0.59/bWAPP/   //set target path
+    #wmap_run -t  //run test targets
+    #wmap_run -e  //execute wmap_run -t auxiliaries
