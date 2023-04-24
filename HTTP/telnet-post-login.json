@@ -1,0 +1,23 @@
+
+POST /public/login HTTP/1.1
+Content-Type: application/json
+Content-length: 45
+
+{"email": "geo@alura.com.br", "senha": "123"}
+
+
+
+
+Resposta ao POST
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+(...)
+Content-Type: application/json
+Content-Length: 364
+
+{
+    "access_token: "eyJhiJ...WCbZof2rf",
+    (...)
+}
