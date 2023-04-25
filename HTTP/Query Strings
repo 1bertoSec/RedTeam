@@ -1,0 +1,4 @@
+# http://localhost/livros?categoria=3
+        Query Strings: ?categoria=3 // Filtra conteúdo pela categoria 3.
+
+#       /livros?categoria=3&autor=1 // Filtra conteúdo pela categoria 3 e autor 1.
